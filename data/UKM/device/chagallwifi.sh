@@ -180,7 +180,7 @@ case "$1" in
 		GPUCURFREQ=/sys/devices/platform/mali.0/clock;
 		
 		if [ -f "$GPUCURFREQ" ]; then
-			GPUFREQ=`$BB cat $GPUCURFRE`;
+			GPUFREQ=`$BB cat $GPUCURFREQ`;
 			$BB echo "$GPUFREQ MHz";
 		else
 			$BB echo "-";
